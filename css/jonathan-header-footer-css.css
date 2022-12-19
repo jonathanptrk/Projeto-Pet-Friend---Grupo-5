@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,600;1,500&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none; color: inherit;
+
+}
+header{
+    background-color: #ACD5DE;
+    width: 100%;
+    padding: 0px;
+    padding-top: 5px;
+}
+.logo{
+    height: 50px;
+    width: 55px;
+    margin-top: -40px;
+    margin-left: 20px;
+}
+.iconUser{
+    padding-left: 0px;
+    margin-right: 30px;
+    margin-left: 15px;
+}
+.login{
+    color: #1A4E8D;
+}
+.IconUser{
+    color: #1A4E8D;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+#textoLogo{
+    text-align: center;
+    color: #1A4E8D;
+    padding-left: 15px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+.mobile-menu-icon{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+.checkbtn{
+    float: right;
+    font-size: 200px;
+    color: #1A4E8D;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.tituloPrincipal{
+    margin-left: 90px;
+    margin-top: 30px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    align-items: center;
+    background-color: #ACD5DE;
+    justify-content: space-between;
+    padding:  20px 20px;
+    margin-top: 20px;;
+
+}
+nav div h1{
+    color: #1A4E8D;
+}
+nav,ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+li {
+    color: #1A4E8D;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 25px;
+
+}
+li:hover{
+    color: #ffff;
+    border-radius: 70px;
+    border-top: 5px;
+    border-width: 5px;
+    background-size: auto;
+    background-color: #1A4E8D;
+}
+.container{
+    display: flex;
+}
+.logo{
+    display: flex;
+}
+
+
+
+body {
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+/* Footer ----------------------------------  */
+
+/*Footer*/
+
+.container-footer{
+    width: 100%;
+    height: 350px;
+    padding-top: 201px;
+    background-color: white;
+}
+.logoFooter{
+    margin-left: 40px;
+    padding-top: 30px;
+    display: inline-block;
+}
+.box-left{
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #1a4e8d;
+    position: absolute;
+    padding-top: 25px;
+    margin-left: 100px;
+    padding-bottom: 20px;
+    float: left;
+    margin-right: 0;
+    padding-right: 0;
+}
+.tituloEndereco{
+    color: #1a4e8d;
+    margin-top: 25px;
+    font-size: 15px;
+}
+.textoEndereco{
+    margin-left: 0;
+    margin-top: 20px;
+}
+.box-middle{
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #1a4e8d;
+    position: absolute;
+    padding-top: 55px;
+    padding-left: 500px;
+    padding-bottom: 20px;
+    float: left;
+    margin-right: 0;
+}
+.box-middle p{
+    margin-top: 20px;
+    margin-left: 0;
+}
+.box-right{
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #1a4e8d;
+    position: absolute;
+    padding-top: 55px;
+    padding-left: 600px;
+    padding-bottom: 20px;
+    float: left;
+    margin-right: 0;
+    margin-left: 300px;
+}
+.box-right p{
+    margin-top: 20px;
+    margin-left: 0;
+}
+.integrantes{
+    padding-top: 200px;
+    margin-left: 350px;
+    padding-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: #1a4e8d;
+    font-weight: bold;
+
+}
+
+/* CSS versão responsiva*/
+
+@media (max-width: 950px) {
+    nav ul{
+        display: none;
+    }
+}
+@media (max-width: 900px){
+    .containerLogo{
+        height: 20px;
+        width: 20px;
+        margin-top: 20px;
+    }
+    .IconUser{
+        display: none;
+    }
+    li:hover{
+        background-color: #1A4E8D;
+    }
+    h1{
+        font-size: 20px;
+        margin-left: -20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    body h2{
+        font-size: 30px;
+        margin-left: 25px;
+        margin-right: 25px;
+        text-align: left;
+
+    }
+    body h3{
+        margin-left: 30px;
+        font-size: 20px;
+        margin-right: 0;
+    }
+    body p{
+        margin-left: 30px;
+        font-size: 15px;
+        margin-right: 100px;
+    }
+    .BodyImg{
+        height: 500px;
+        width: 400px;
+        margin-top: 30px;
+        margin-left: 50px;
+        padding-bottom: 30px;
+    }
+    .container{
+        display: inline-block;
+    }
+    button{
+        margin-bottom: 50px;
+    }
+    .logo2Img{
+        margin-left: 100px ;
+    }
+    footer{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    section label {
+        margin-bottom: 20px;
+        width: 100%;
+        float: bottom;
+    }
+}
+@media screen and (max-width: 768px) {
+    .kd-filter-button{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 200px;
+        margin-top: 20px;
+    }
+    h1{
+        margin-left: 5px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 950px){
+    .blocoTitle1,.blocoTitle2,.blocoTitle3{
+        display: none;
+    }
+}
+@media screen and (max-width: 850px) {
+    .img1,.img2,.img3,.img4,.img5,.img6,.img7,.img8{
+        align-content: center;
+        margin-left: 100px;
+    }
+
+}
+@media (max-width: 1100px) {
+    #textoLogo{
+        display: none;
+    }
+}
+@media (max-width: 858px){
+    #textoLogo{
+        display: flex;
+        float: right;
+    }
+    ul:hover{
+        text-color: #1a658d;
+    }
+    ul{
+        display: flex;
+        padding-top: 80px;
+        position: absolute;
+        height: 100vh;
+        background-color: #ACD5DE;
+        top: 80px;
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        font-size: 20px;
+    }
+    .mobile-menu-icon{
+        display: flex;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        color: #1A4E8D;
+        margin-left: 400px;
+        margin-top: -70px;
+        cursor: pointer;
+    }
+    .open{
+        display: block;
+    }
+    .mobile-menu ul{
+        text-align: center;
+        background-color: #ACD5DE;
+        margin-left: 260px;
+        flex-direction: column;
+        display: flex;
+        padding-bottom: 0;
+    }
+    .mobile-menu ul li{
+        background: transparent;
+    }
+}
+
+

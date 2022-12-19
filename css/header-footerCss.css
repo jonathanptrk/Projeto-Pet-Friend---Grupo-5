@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,600;1,500&display=swap');
+
+
+* {
+    --header_color: #ACD5DE;
+    --text_color: rgb(26, 78, 141);
+}
+
+body {
+    margin: 0;
+}
+
+/*Header*/
+
+header {
+    width: 100%;
+    height: 75px;
+    background-color: var(--header_color);
+    margin: 0;
+    font-family: poppins-semibold, poppins, sans-serif;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--text_color);
+}
+
+header #cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header #links {
+    padding-right: 20px;
+}
+
+header #links li {
+    display: inline-block;
+}
+
+header #links li a {
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+header #links li a:hover {
+    color: white;
+    background-color: var(--text_color);
+    transition: 0.5s;
+    border-radius: 80px;
+}
+
+header #logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+header #img-logo {
+    max-height: 40px;
+    padding-right: 10px;
+}
+
+header .main_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header svg {
+    padding-left: 10px;
+    color: var(--main_color);
+}
+
+/*Mobile_Menu*/
+
+header button{
+    all: unset;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    width: 35%;
+    height: 20px;
+    padding: 20px 20px 25px;
+    background-color:#1A4E8D;
+    color: whitesmoke;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+header .mobile-menu-icon {
+    display: none;
+}
+
+header .mobile-menu {
+    display: none;
+}
+
+
+@media (max-width: 950px) {
+    header nav ul{
+        display: none;
+    }
+}
+
+@media (max-width: 858px) {
+
+    header .main_menu {
+        display: none;
+    }
+
+    header ul:hover {
+        color: #1a658d;
+    }
+
+    header ul {
+        padding-top: 80px;
+        position: absolute;
+        left: 0;
+        height: 100vh;
+        background-color: var(--header_color);
+        top: 25px;
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    header .mobile-menu-icon {
+        display: flex;
+        position: absolute;
+        right: 10%;
+    }
+
+    header .mobile-menu-icon button {
+        background-color: transparent;
+        color: #1A4E8D;
+        cursor: pointer;
+    }
+
+    header .open {
+        display: block;
+    }
+
+    header .mobile-menu ul {
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+        align-items: start;
+        background-color: var(--header_color);
+        border: 1px var(--main_color) solid;
+        flex-direction: column;
+        width: 25%;
+        display: flex;
+        padding-bottom: 0;
+    }
+
+    header .mobile-menu a:hover{
+        color: white;
+        background-color: var(--main_color);
+        padding: 5px 10px;
+        border-radius: 50px;
+        transition: 0.5s;
+    }
+
+    header .mobile-menu ul li {
+        list-style: initial;
+        text-align: left;
+        background: transparent;
+        padding-bottom: 5px;
+    }
+}
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    height: 2%;
+    background-color: white;
+    font-family: poppins-semibold, poppins, sans-serif;
+    border-top: 2px solid var(--main_color);
+    margin: 15px 0 0;
+    color: var(--text_color);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--text_color);
+}
+
+footer .conteiner-footer {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+footer .footer-col {
+    width: calc(90% / 4);
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px auto;
+    height: 175px;
+}
+
+footer h4 {
+    margin-bottom: 0;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    padding: 4px;
+    list-style: none;
+}
+
+footer .logo-foot {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .logo-foot div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .logo-foot i {
+    font-size: 40px;
+    padding: 15px 8px;
+}
+
+footer #endereco, #contatos, #sociais {
+    width: 80%;
+    min-width: 200px;
+}
+
+/*Mobile Footer*/
+
+footer .coll-footer {
+    display: none;
+}
+
+@media (max-width: 950px) {
+}
+
+@media (max-width: 858px) {
+
+    footer .conteiner-footer {
+        display: none;
+    }
+    footer .coll-footer{
+        display: block;
+    }
+
+    footer .footer-row {
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 20px auto;
+        height: 175px;
+    }
+
+    footer .collapsible {
+        color: white;
+        cursor: pointer;
+        padding: 0;
+        height: auto;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        outline: none;
+        font-size: 25px;
+        display: block;
+        border: 0;
+        border-bottom: lightgrey solid 1px;
+        background-color: var(--main_color);
+        border-radius: 80px;
+    }
+
+    footer .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    footer .active {
+        border: 0;
+    }
+}
